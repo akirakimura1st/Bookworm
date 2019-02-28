@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+    <h2 class="bodytop_margin">本の詳細</h2>
+        <div class="w-100"></div>
+        <div class="col bodytop_margin text-white bg-dark">タイトル</div>
+        <div class="w-100"></div>
+        <div class="col border"><%= @book.title %></div>
+        <div class="w-100"></div>
+        <div class="col bodytop_margin text-white bg-dark">感想</div>
+        <div class="w-100"></div>
+        <div class="col border"><%= @book.body %></div>
+        <div class="w-100"></div>
+        <%= link_to "編集", edit_book_path(@book.id), class: "btn btn-light texttop_margin" %>
+        <%= link_to "戻る", books_path, class: "btn btn-light texttop_margin" %>
+    </div>
+</div>
